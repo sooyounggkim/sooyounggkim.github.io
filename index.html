@@ -1,12 +1,231 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Sooyoung Kim</title>
+  
+  <meta name="author" content="Sooyoung Kim">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
 </head>
+
 <body>
-  <p>Hello, World!</p>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Sooyoung Kim</name>
+              </p>
+              <p>
+                I am a Robotics PhD student at Carnegie Mellon University advised by <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a> and <a href="https://www.cs.cmu.edu/~schneide/">Jeff Schneider</a>.
+                Previously, I worked at Meta AI and completed my undergrad at UC Berkeley where I was fortunate to work with <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>, <a href="https://twitter.com/RCalandra">Roberto Calandra</a>, <a href="https://twitter.com/svlevine">Sergey Levine</a>, and <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister</a>.
+              </p>
+              <p>
+                My research focuses on developing learning-based control algorithms at the intersection of generative modeling, model-based planning, and reinforcement learning. In my PhD, I have primarily focused on applying these ideas to autonomous driving. During my undergrad, I worked on a variety of real-world robot learning problems ranging from low-cost manipulation to microrobot locomotion.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:brianhyang@cmu.edu">Email</a> &nbsp/&nbsp
+                <a href="data/Resume.pdf">CV</a> &nbsp/&nbsp
+                <a href="http://www.github.com/bhyang/">GitHub</a> &nbsp/&nbsp
+                <a href="http://www.linkedin.com/in/bhyang/">LinkedIn</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/BrianYang.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/BrianYang.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/icml.png" alt="diffusion-es" width="240" height="120">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Learning Driving Policies with Offline Counterfactual Reactive Simulation
+                </papertitle>
+              <br>
+              Adam Villaflor, <strong>Brian Yang</strong>, Katerina Fragkiadaki, John Dolan, Jeff Schneider
+              <br>
+              <em>In submission</em>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/diffusiones.png" alt="diffusion-es" width="240" height="120">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Diffusion-ES: Gradient-free Planning with Diffusion for Autonomous Driving and Zero-Shot Instruction Following
+                </papertitle>
+              <br>
+              <strong>Brian Yang</strong>, Huangyuan Su, Nikolaos Gkanatsios, Tsung-Wei Ke, Ayush Jain, Jeff Schneider, Katerina Fragkiadaki
+              <br>
+              <em>CVPR</em> 2024
+              <br>
+              <a href="https://arxiv.org/abs/2402.06559">arXiv</a> / 
+              <a href="https://arxiv.org/pdf/2402.06559.pdf">pdf</a> / 
+              <a href="https://diffusion-es.github.io/">website</a> 
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/p2dbm.png" alt="p2dbm" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Tractable Joint Prediction and Planning Over Discrete Behavior Modes for Urban Driving
+                </papertitle>
+              <br>
+              Adam Villaflor, <strong>Brian Yang</strong>, Huangyuan Su, Katerina Fragkiadaki, John Dolan, Jeff Schneider
+              <br>
+              <em>ICRA</em> 2024
+              <br>
+              <a href="https://arxiv.org/abs/2403.07232">arXiv</a> / 
+              <a href="https://arxiv.org/pdf/2403.07232.pdf">pdf</a> / 
+              <a href="https://github.com/avillaflor/P2DBM">code</a> 
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/relmm.png" alt="relmm" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Fully Autonomous Real-World Reinforcement Learning with Applications to Mobile Manipulation
+                </papertitle>
+              <br>
+              Charles Sun, Jędrzej Orbik, Coline Devin, <strong>Brian Yang</strong>, Abhishek Gupta, Glen Berseth, Sergey Levine
+              <br>
+              <em>CoRL</em> 2022
+              <br>
+              <a href="https://arxiv.org/abs/2107.13545">arXiv</a> / 
+              <a href="https://arxiv.org/pdf/2107.13545.pdf">pdf</a> / 
+              <a href="https://bair.berkeley.edu/blog/2023/01/20/relmm/">blog</a> /
+              <a href="https://github.com/charlesjsun/ReLMM">code</a> 
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/wrench.png" alt="mavric" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>MAVRIC: Morphology-Agnostic Visual Robotic Control</papertitle>
+              <br>
+              <strong>Brian Yang*</strong>, Dinesh Jayaraman*, Glen Berseth, Alexei Efros, Sergey Levine
+              <br>
+              <em>RA-L + ICRA</em> 2020
+              <br>
+              <a href="https://arxiv.org/abs/1912.13360">arXiv</a> / <a href="https://arxiv.org/pdf/1912.13360.pdf">pdf</a> / <a href="https://sites.google.com/berkeley.edu/mavric">project page</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/teaser.png" alt="mavric" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>DIGIT: A Novel Design for a Low-Cost Compact High-Resolution Tactile Sensor with Application to In-Hand Manipulation</papertitle>
+              <br>
+              Mike Lambeta*, Po-Wei Chou*, Stephen Tian, <strong>Brian Yang</strong>, Benjamin Maloon, Victoria Rose Most, Dave Stroud, Raymond Santos, Ahmad Byagowi, Gregg Kammerer, Dinesh Jayaraman, Roberto Calandra
+              <br>
+              <em>RA-L + ICRA</em> 2020
+              <br>
+              <a href="https://arxiv.org/abs/2005.14679">arXiv</a> / <a href="https://arxiv.org/pdf/2005.14679.pdf">pdf</a> / <a href="https://digit.ml/">project page</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/replab.jpg" alt="replab" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>REPLAB: A Reproducible Low-Cost Arm Benchmark Platform for Robotic Learning</papertitle>
+              <br>
+              <strong>Brian Yang</strong>, Dinesh Jayaraman, Sergey Levine
+              <br>
+              <em>ICRA</em> 2019
+              <br>
+              <a href="https://arxiv.org/abs/1905.07447">arXiv</a> /
+              <a href="https://arxiv.org/pdf/1905.07447.pdf">pdf</a> /
+              <a href="https://sites.google.com/view/replab/">project page</a> /
+              <a href="https://github.com/bhyang/replab">code</a>
+              <!-- <p>We present a reproducible, low-cost, self-contained hardware stack for benchmarking vision-based manipulation tasks.</p> -->
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/microrobot-morphology.png" alt="morphology" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Data-efficient Learning of Morphology and Controller for a Microrobot</papertitle>
+              <br>
+              Thomas Liao, Grant Wang, <strong>Brian Yang</strong>, Rene Lee, Kris Pister, Sergey Levine, Roberto Calandra
+              <br>
+              <em>ICRA</em> 2019
+              <br>
+              <a href="https://arxiv.org/abs/1905.01334">arxiv</a> /
+              <a href="https://arxiv.org/pdf/1905.01334.pdf">pdf</a> /
+              <a href="https://sites.google.com/view/learning-robot-morphology/">project page</a> /
+              <a href="https://github.com/tholiao/learning-morph-and-ctrl">code</a>
+              <!-- <p>Robot design is often a slow and difficult process requiring the iterative construction and testing of prototypes. We propose HPC-BBO, a novel algorithm to efficiently and automatically design hardware configurations and controllers for locomotion.</p> -->
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/prototype.png" alt="prototype" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Learning Flexible and Reusable Locomotion Primitives for a Microrobot</papertitle>
+              <br>
+              <strong>Brian Yang*</strong>, Grant Wang*, Roberto Calandra, Daniel Contreras, Sergey Levine, Kris Pister
+              <br>
+              <em>RA-L + ICRA</em> 2018
+              <br>
+              <a href="https://arxiv.org/abs/1803.00196">arXiv</a> /
+              <a href="https://arxiv.org/pdf/1803.00196.pdf">pdf</a> /
+              <a href="https://sites.google.com/view/learning-locomotion-primitives">project page</a> /
+              <a href="https://github.com/bhyang/microrobot-locomotion">code</a>
+              <!-- <p>We validate Bayesian optimization as a
+              data-efficient method to design gaits for legged microrobots. We also propose a novel
+              approach to learning motor primitives by converting a contextual policy
+              search problem into a multi-objective optimization task.</p> -->
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Template taken from <a href="https://jonbarron.info/">here</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>
