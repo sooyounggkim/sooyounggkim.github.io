@@ -1,977 +1,231 @@
 
 <!DOCTYPE HTML>
-<html lang="en">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <meta name="author" content="Sooyoung Kim">
-  <meta charset="UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Brian Yang</title>
+  
+  <meta name="author" content="Brian Yang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="vUeO3cwD3be3PmDm2dfVVdqx_RfFM7uI-MIA0Md9Zbo" />
-  <title>Sooyoung Kim's Website</title>
-
+  
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/141/141791.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cantarell&family=Pacifico&family=Playfair+Display+SC:wght@900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
 </head>
 
 <body>
-  <div class="container text-center mt-5 py-3" style="max-width: 800px;">
-    <h1 class="h1-title mb-4">Kwon Ko</h1>
-
-    <div class="row">
-      <div class="col-md-4 f2 mb-1"><a href="https://hyungkwonko.info/CV/hkko-cv.pdf" class="f2">Curriculum Vitae</a>
-      </div>
-      <div class="col-md-4 mb-1">
-        <a href="#" class="cryptedmail f1" data-name="hyungkwonko" data-domain="gmail" data-tld="com"
-          onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
-        </a>
-      </div>
-      <div class="col-md-3 f1 mb-1"><a href="https://blog.naver.com/hyungkwonko" class="f1">Blog (KOR)</a></div>
-
-      <div class="col-md-1 mb-1">
-        <i class="fa-solid fa-moon cursor-pointer" id="theme-icon" onclick="switchTheme(); toggleIcon();"></i>
-      </div>
-    </div>
-
-    <div style="align-items: center;" class="row">
-      <div class="col-sm-4">
-        <img class="px-2 py-2 img-fluid rounded-circle" src="./images/hkko_grey.jpeg"
-          onmouseover="this.src='./images/hkko_color.jpeg'" onmouseout="this.src='./images/hkko_grey.jpeg'">
-      </div>
-      <div style="text-align: justify;" class="my-4 col-sm-8">
-        <p style="border-style: solid; border-color: #2569E6; padding: 10px">
-          <!-- <span style="text-decoration: underline; font-weight: bold; font-style: italic;"><a
-              href="https://www.youtube.com/watch?v=18bZK-0fMio">** I am a
-              prospective Ph.D. student for Fall 2023 admission. **</a></span>
-          <br> -->
-          I am an incoming Ph.D. student at <a class="f4" href="https://hci.stanford.edu/">Stanford
-            University</a>, and my studies will be partially supported by the <a class="f4"
-            href="https://www.fulbright.or.kr/en/">Fulbright Foundation</a>.
-        </p>
-
-        <p style="margin-bottom:16px">
-          I am broadly interested in Generative AI, HCI, and Visualization. I am eager to find important problems in
-          diverse domains, and innovate our lives using technology; it does not have to be AI. I strive to synchronize
-          my ambitions with societal ethos. I am not interested in money, but people and how they function within
-          capitalism. I prefer not to draw a strict boundary between academia and industry.
-        </p>
-
-        <p style="margin:0px">
-          I received my Master's degree from
-          <a class="f4" href="https://cse.snu.ac.kr/en">the Department of Computer Science and Engineering</a>
-          of
-          <a class="f4" href="https://en.snu.ac.kr/">Seoul National University</a> studying Human-computer Interaction
-          and Information Visualization.
-          During my MS, I worked with
-          <a class="f4" href="http://hcil.snu.ac.kr/">SNU HCIL</a>
-          under the supervision of
-          <a class="f4" href="http://hcil.snu.ac.kr/jwseo/">Prof. Jinwook Seo</a>
-          mostly on dimensionality reduction methods.
-          I received my Bachelor's degree from
-          <a class="f4" href="https://www.hanyang.ac.kr/web/eng">Hanyang University</a>.
-          During my BS, I majored in mathematics, minored in industrial engineering, and earned 16 credits in computer
-          science and engineering.
-          I was a full-time research scientist at
-          <a class="f4" href="https://webtoonscorp.com/en/">Naver Webtoon Corp.</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container my-2 py-3" style="max-width: 800px;">
-    <!-- <h4>NEWS</h4> -->
-    <button onclick="extend_news()" class="button">
-      <h4>NEWS</h4>
-    </button>
-    <table style="text-align:justify;" class="table" id="news">
-      <tbody class="tbody-expand">
-        <tr>
-          <td class="px-2" style="width:5%;">May</td>
-          <td class="px-0" style="width:5%;">2024</td>
-          <td style="padding-left:20px; padding-right:0px;">Started working as a research engineer at SkillWave, Inc.
-          </td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Apr</td>
-          <td class="px-0" style="width:5%;">2024</td>
-          <td style="padding-left:20px; padding-right:0px;">Invited for a talk at Sungkyunkwan University and <a
-              class="f4" href="https://cse.snu.ac.kr/community/seminar/1024">Seoul National University</a>.</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Jan</td>
-          <td class="px-0" style="width:5%;">2024</td>
-          <td style="padding-left:20px; padding-right:0px;">Chart-LLM is accepted to <a class="f4"
-              href="https://arxiv.org/abs/2309.10245/">CHI 2024</a>.</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Sep</td>
-          <td class="px-0" style="width:5%;">2023</td>
-          <td style="padding-left:20px; padding-right:0px;">Nominated as <a class="f4"
-              href="https://www.fulbrightprogram.org/">Fulbright scholarship recipient</a>.</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Aug</td>
-          <td class="px-0" style="width:5%;">2023</td>
-          <td style="padding-left:20px; padding-right:0px;">Two papers are accepted to <a class="f4"
-              href="https://ieeevis.org/year/2023/welcome">VIS 2023</a> and <a class="f4"
-              href="https://www.nlvizworkshop2023.com/">NLVIZ Workshop</a>, respectively!</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Mar</td>
-          <td class="px-0" style="width:5%;">2023</td>
-          <td style="padding-left:20px; padding-right:0px;"><i>ExGPTer</i> is accepted to CHI 2023 <a class="f4"
-              href="https://generativeaiandhci.github.io/">Gen-AI workshop</a>!</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Jan</td>
-          <td class="px-0" style="width:5%;">2023</td>
-          <td style="padding-left:20px; padding-right:0px;">Our paper about DALL-E is accepted to IUI 2023!</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Nov</td>
-          <td class="px-0" style="width:5%;">2022</td>
-          <td style="padding-left:20px; padding-right:0px;"><a class="f4"
-              href="https://www.computer.org/publications/tech-news/build-your-career/road-to-becoming-a-published-researcher">My
-              interview with IEEE Computer Society</a> was published!</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Oct</td>
-          <td class="px-0" style="width:5%;">2022</td>
-          <td style="padding-left:20px; padding-right:0px;">Attend UIST 2022 in person to present <a class="f4"
-              href="https://programs.sigchi.org/uist/2022/index/content/85050">my work</a>, perform SV-ing, and give a
-            lightning talk! Received <a class="f4" href="https://sigchi.org/awards/gary-marsden-travel-awards/">Gary
-              Marsden Travel Awards</a> to support my
-            trip.</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Oct</td>
-          <td class="px-0" style="width:5%;">2022</td>
-          <td style="padding-left:20px; padding-right:0px;">Submit two papers about <a class="f4"
-              href="https://arxiv.org/abs/2210.08477">DALL-E</a> and generative model's disentanglement to IUI 2023.
-          </td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Jun</td>
-          <td class="px-0" style="width:5%;">2022</td>
-          <td style="padding-left:20px; padding-right:0px;">Two papers, UMATO and We-toon, are accepted to IEEE VIS 2022
-            and ACM UIST 2022, respectively!</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Jun</td>
-          <td class="px-0" style="width:5%;">2022</td>
-          <td style="padding-left:20px; padding-right:0px;">Move to KAIST at Daejeon, Korea to collaborate with KIXLAB
-            led by Prof. Juho Kim.</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Jan</td>
-          <td class="px-0" style="width:5%;">2022</td>
-          <td style="padding-left:20px; padding-right:0px;">Publish an Arxiv paper about interactive brushing
-            technique.</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Oct</td>
-          <td class="px-0" style="width:5%;">2021</td>
-          <td style="padding-left:20px; padding-right:0px;">Get a full-time posiiton as a research scientist at Naver
-            Webtoon Corp.</td>
-        </tr>
-        <tr>
-          <td class="px-2" style="width:5%;">Apr</td>
-          <td class="px-0" style="width:5%;">2021</td>
-          <td style="padding-left:20px; padding-right:0px;">Graduate from Seoul National University receiving Master's
-            degree in Computer Science and Engineering under the supervision of Prof. Jinwook Seo (specialty: HCI,
-            InfoVis)
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="container my-2 py-3" style="max-width: 800px;">
-    <h4>PUBLICATIONS</h4>
-    <!-- <button onclick="extend_pub()" class="button">
-      <h4>PUBLICATIONS</h4>
-    </button> -->
-
-    <table>
-      <!-- <table id="publ"> -->
-      <tbody>
-        <tr onmouseout="vl_stop()" onmouseover="vl_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="vl_image" style="opacity: 0;">
-                <img src="./images/vl_after.png" class="img1">
-              </div>
-              <img src="./images/vl_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function vl_start() {
-                document.getElementById('vl_image').style.opacity = "1";
-              }
-
-              function vl_stop() {
-                document.getElementById('vl_image').style.opacity = "0";
-              }
-              vl_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Natural Language Dataset Generation Framework for Visualizations Powered by Large Language Models
-            </strong>
-            <br>
-            <u>Kwon Ko</u>, Hyeon Jeon, Gwanmo Park, Dae Hyun Kim, Nam Wook Kim, Juho Kim, Jinwook Seo
-            <br>
-            <em>CHI 2024</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <!-- <a href="javascript:void(0)" style="color: darkblue;">paper</a> / -->
-              <a class="f3" href="https://arxiv.org/abs/2309.10245/">paper</a> /
-              <a class="f3" href="https://github.com/hyungkwonko/chart-llm/">code</a> /
-              <a class="f3" href="https://hyungkwonko.info/chart-llm/">project-page</a>
-              <!-- <a class="f3" href="https://youtu.be/QU9XRchhESw">video</a> / -->
-              <!-- <a class="f3" href="./data/pumap.bib">bibtex</a> / -->
-              <!-- <a class="f3" href="https://doi.org/10.1145/3581641.3584078">doi</a> -->
-              <p style="font-size:11px; margin:0px; text-align:justify;">We introduce VL2NL, a Large Language Model
-                (LLM) framework that generates rich and diverse NL datasets using only Vega-Lite specifications as
-                input, thereby streamlining the development of Natural Language Interfaces (NLIs) for data
-                visualization. To synthesize relevant chart semantics accurately and enhance syntactic diversity in each
-                NL dataset, we leverage 1) a guided discovery incorporated into prompting so that LLMs can steer
-                themselves to create faithful NL datasets in a self-directed manner; 2) a score-based paraphrasing to
-                augment NL syntax along with four language axes. We also present a new collection of 1,981 real-world
-                Vega-Lite specifications that have increased diversity and complexity than existing chart collections.
-                When tested on our chart collection, VL2NL extracted chart semantics and generated L1/L2 captions with
-                89.4% and 76.0% accuracy, respectively. It also demonstrated generating and paraphrasing utterances and
-                questions with greater diversity compared to the benchmarks. Last, we discuss how our NL datasets and
-                framework can be utilized in real-world scenarios. The codes and chart collection are available at this
-                https URL.
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <h1 class="h1-title mb-4">Sooyoung Kim</h1>
               </p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="zd_stop()" onmouseover="zd_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="zd_image" style="opacity: 0;">
-                <img src="./images/zd_after.png" class="img1">
-              </div>
-              <img src="./images/zd_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function zd_start() {
-                document.getElementById('zd_image').style.opacity = "1";
-              }
-
-              function zd_stop() {
-                document.getElementById('zd_image').style.opacity = "0";
-              }
-              zd_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Zadu: A python library for evaluating the reliability of dimensionality reduction embeddings
-            </strong>
-            <br>
-            Hyeon Jeon, Aeri Cho, Jinhwa Jang, Soohyun Lee, Jake Hyun, <u>Kwon Ko</u>, Jaemin Jo, Jinwook Seo
-            <br>
-            <em>VIS 2023 short</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <a class="f3" href="https://arxiv.org/abs/2308.00282">paper</a> /
-              <a class="f3" href="https://github.com/hj-n/zadu">code</a>
-              <!-- <a class="f3" href="https://youtu.be/QU9XRchhESw">video</a> / -->
-              <!-- <a class="f3" href="./data/pumap.bib">bibtex</a> / -->
-              <!-- <a class="f3" href="https://doi.org/10.1145/3581641.3584078">doi</a> -->
-              <p style="font-size:11px; margin:0px; text-align:justify;">Dimensionality reduction (DR) techniques
-                inherently distort the original structure of input high-dimensional data, producing imperfect
-                low-dimensional embeddings. Diverse distortion measures have thus been proposed to evaluate the
-                reliability of DR embeddings. However, implementing and executing distortion measures in practice has so
-                far been time-consuming and tedious. To address this issue, we present ZADU, a Python library that
-                provides distortion measures. ZADU is not only easy to install and execute but also enables
-                comprehensive evaluation of DR embeddings through three key features. First, the library covers a wide
-                range of distortion measures. Second, it automatically
-                optimizes the execution of distortion measures, substantially reducing the running time required to
-                execute multiple measures. Last, the library informs how individual points contribute to the overall
-                distortions, facilitating the detailed analysis of DR embeddings. By simulating a real-world scenario of
-                optimizing DR embeddings, we verify that our optimization scheme substantially reduces the time required
-                to execute distortion measures. Finally, as an application of ZADU, we present another library called
-                ZADUVis that allows users to easily create distortion visualizations that depict the extent to which
-                each region of an embedding suffers from distortions.
+              <p>
+                I am a Robotics PhD student at Carnegie Mellon University advised by <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a> and <a href="https://www.cs.cmu.edu/~schneide/">Jeff Schneider</a>.
+                Previously, I worked at Meta AI and completed my undergrad at UC Berkeley where I was fortunate to work with <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>, <a href="https://twitter.com/RCalandra">Roberto Calandra</a>, <a href="https://twitter.com/svlevine">Sergey Levine</a>, and <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister</a>.
               </p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="cs_stop()" onmouseover="cs_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="cs_image" style="opacity: 0;">
-                <img src="./images/cs_after.png" class="img1">
-              </div>
-              <img src="./images/cs_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function cs_start() {
-                document.getElementById('cs_image').style.opacity = "1";
-              }
-
-              function cs_stop() {
-                document.getElementById('cs_image').style.opacity = "0";
-              }
-              cs_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Moderating Customer Inquiries and Responses to Alleviate Stress and Reduce Emotional Dissonance of
-              Customer Service Representatives
-            </strong>
-            <br>
-            <u>Kwon Ko</u>, Kihoon Son, Hyoungwook Jin, Yoonseo Choi, Xiang Anthony Chen
-            <br>
-            <em>CHI 2023 Generative AI and HCI Workshop</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <a class="f3" href="./data/customer.pdf">paper</a>
-              <!-- <a class="f3" href="https://github.com/hyungkwonko/progressive-umap">code</a> / -->
-              <!-- <a class="f3" href="https://youtu.be/QU9XRchhESw">video</a> / -->
-              <!-- <a class="f3" href="./data/pumap.bib">bibtex</a> / -->
-              <!-- <a class="f3" href="https://doi.org/10.1145/3581641.3584078">doi</a> -->
-              <p style="font-size:11px; margin:0px; text-align:justify;">Customer service representatives (CSRs) face
-                significant levels of stress as a result of handling disrespectful customer inquiries and the emotional
-                dissonance that arises from concealing their true emotions to provide the best customer experience.
-                To solve this issue, we propose ExGPTer that uses ChatGPT to moderate the tone and manner of a customer
-                inquiry to be more gentle and appropriate, while ensuring that the content remains unchanged.
-                ExGPTer also augments CSRs' responses to answer customer inquiries, so they can conform to established
-                company protocol while effectively conveying the essential information that customers seek.
+              <p>
+                My research focuses on developing learning-based control algorithms at the intersection of generative modeling, model-based planning, and reinforcement learning. In my PhD, I have primarily focused on applying these ideas to autonomous driving. During my undergrad, I worked on a variety of real-world robot learning problems ranging from low-cost manipulation to microrobot locomotion.
               </p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="ltgm_stop()" onmouseover="ltgm_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="ltgm_image" style="opacity: 0;">
-                <img src="./images/ltgm_after.png" class="img1">
-              </div>
-              <img src="./images/ltgm_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function ltgm_start() {
-                document.getElementById('ltgm_image').style.opacity = "1";
-              }
-
-              function ltgm_stop() {
-                document.getElementById('ltgm_image').style.opacity = "0";
-              }
-              ltgm_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Large-scale Text-to-Image Generation Models for Visual Artists' Creative Work
-            </strong>
-            <br>
-            <u>Kwon Ko</u>, Gwanmo Park, Hyeon Jeon, Jaemin Jo, Juho Kim, Jinwook Seo
-            <br>
-            <em>IUI 2023</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <a class="f3" href="https://arxiv.org/abs/2210.08477">paper</a> /
-              <!-- <a class="f3" href="https://github.com/hyungkwonko/progressive-umap">code</a> / -->
-              <a class="f3" href="https://youtu.be/QU9XRchhESw">video</a> /
-              <!-- <a class="f3" href="./data/pumap.bib">bibtex</a> / -->
-              <a class="f3" href="https://doi.org/10.1145/3581641.3584078">doi</a>
-              <p style="font-size:11px; margin:0px; text-align:justify;">Large-scale Text-to-image Generation Models
-                (LTGMs) (e.g., DALL-E), self-supervised deep learning models trained on a huge dataset, have
-                demonstrated the capacity for generating high-quality open-domain images from multi-modal input.
-                Although they can even produce anthropomorphized versions of objects and animals, combine irrelevant
-                concepts in reasonable ways, and give variation to any user-provided images, we witnessed such rapid
-                technological advancement left many visual artists disoriented in leveraging LTGMs more actively in
-                their creative works. Our goal in this work is to understand how visual artists would adopt LTGMs to
-                support their creative works. To this end, we conducted an interview study as well as a systematic
-                literature review of 72 system/application papers for a thorough examination. A total of 28 visual
-                artists covering 35 distinct visual art domains acknowledged LTGMs’ versatile roles with high usability
-                to support creative works in automating the creation process (i.e., automation), expanding their ideas
-                (i.e., exploration), and facilitating or arbitrating in communication (i.e., mediation). We conclude by
-                providing four design guidelines that future researchers can refer to in making intelligent user
-                interfaces using LTGMs.
+              <p style="text-align:center">
+                <a href="mailto:brianhyang@cmu.edu">Email</a> &nbsp/&nbsp
+                <a href="data/Resume.pdf">CV</a> &nbsp/&nbsp
+                <a href="http://www.github.com/bhyang/">GitHub</a> &nbsp/&nbsp
+                <a href="http://www.linkedin.com/in/bhyang/">LinkedIn</a>
               </p>
-            </div>
-          </td>
-        </tr>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/BrianYang.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/BrianYang.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-        <tr onmouseout="wetoon_stop()" onmouseover="wetoon_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id='wetoon'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/wetoon_after.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video></div>
-              <img src='images/wetoon_before.png' class="img1">
-            </div>
-            <script type="text/javascript">
-              function wetoon_start() {
-                document.getElementById('wetoon').style.opacity = "1";
-              }
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/icml.png" alt="diffusion-es" width="240" height="120">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Learning Driving Policies with Offline Counterfactual Reactive Simulation
+                </papertitle>
+              <br>
+              Adam Villaflor, <strong>Brian Yang</strong>, Katerina Fragkiadaki, John Dolan, Jeff Schneider
+              <br>
+              <em>In submission</em>
 
-              function wetoon_stop() {
-                document.getElementById('wetoon').style.opacity = "0";
-              }
-              wetoon_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>We-toon: A Communication Support System between Writers and
-              Artists in Collaborative Webtoon Sketch Revision</strong>
-            <br>
-            <u>Kwon Ko*</u>, Subin An*, Gwanmo Park, Seung Kwon Kim, Daesik Kim, Bohyoung Kim, Jaemin Jo, Jinwook
-            Seo
-            <br>
-            <em>UIST 2022</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <a class="f3" href="./data/wetoon.pdf">paper</a> /
-              <!-- <a class="f3" href="https://github.com/hyungkwonko/progressive-umap">code</a> / -->
-              <a class="f3" href="https://www.youtube.com/watch?v=csZMW-e5cC0">video</a> /
-              <a class="f3"
-                href="https://www.youtube.com/watch?v=txM-TuZawx8&list=PLqhXYFYmZ-Ve-_J8cyVGTTVZBiDC78lyp&t=3145s">talk</a>
-              /
-              <!-- <a class="f3" href="./data/pumap.bib">bibtex</a> / -->
-              <a class="f3" href="https://doi.org/10.1145/3526113.3545612">doi</a>
-              <p style="font-size:11px; margin:0px; text-align:justify;">We present a communication support system,
-                namely We-toon, that
-                can bridge the webtoon writers and artists during sketch revision
-                (i.e., character design and draft revision). In the highly iterative design process between the webtoon
-                writers and artists, writers often
-                have difficulties in precisely articulating their feedback on sketches
-                owing to their lack of drawing proficiency. This drawback makes
-                the writers rely on textual descriptions and reference images found
-                using search engines, leading to indirect and inefficient communications. Inspired by a formative study,
-                we designed We-toon to help
-                writers revise webtoon sketches and effectively communicate with
-                artists. Through a GAN-based image synthesis and manipulation,
-                We-toon can interactively generate diverse reference images and
-                synthesize them locally on any user-provided image. Our user study
-                with 24 professional webtoon authors demonstrated that We-toon
-                outperforms the traditional methods in terms of communication
-                effectiveness and the writers’ satisfaction level related to the revised
-                image.</p>
-            </div>
-          </td>
-        </tr>
+            </td>
+          </tr>
 
-        <tr onmouseout="umato_stop()" onmouseover="umato_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="umato_image" style="opacity: 0;">
-                <img src="./images/umato_after.png" class="img1">
-              </div>
-              <img src="./images/umato_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function umato_start() {
-                document.getElementById('umato_image').style.opacity = "1";
-              }
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/diffusiones.png" alt="diffusion-es" width="240" height="120">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Diffusion-ES: Gradient-free Planning with Diffusion for Autonomous Driving and Zero-Shot Instruction Following
+                </papertitle>
+              <br>
+              <strong>Brian Yang</strong>, Huangyuan Su, Nikolaos Gkanatsios, Tsung-Wei Ke, Ayush Jain, Jeff Schneider, Katerina Fragkiadaki
+              <br>
+              <em>CVPR</em> 2024
+              <br>
+              <a href="https://arxiv.org/abs/2402.06559">arXiv</a> / 
+              <a href="https://arxiv.org/pdf/2402.06559.pdf">pdf</a> / 
+              <a href="https://diffusion-es.github.io/">website</a> 
 
-              function umato_stop() {
-                document.getElementById('umato_image').style.opacity = "0";
-              }
-              umato_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Uniform Manifold Approximation with Two-phase Optimization</strong>
-            <br>
-            Hyeon Jeon*, <u>Kwon Ko*</u>, Soohyun Lee, Jaemin Jo, Jinwook Seo
-            <br>
-            <em>VIS 2022 short</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> / -->
-              <a class="f3" href="https://arxiv.org/abs/2205.00420">paper</a> /
-              <a class="f3" href="https://github.com/hyungkwonko/umato">code</a> /
-              <a class="f3" href="https://www.youtube.com/watch?v=cIJy8N1YhmQ">video</a> /
-              <a class="f3" href="https://youtu.be/yPEez2QUTEM?t=3994">talk</a> /
-              <a class="f3" href="https://doi.org/10.1109/VIS54862.2022.00025">doi</a>
-              <p style="font-size:11px; margin:0px; text-align:justify;">We introduce Uniform Manifold Approximation
-                with Two-phase Optimization (UMATO), a dimensionality reduction (DR) technique that improves UMAP to
-                capture the global structure of high-dimensional data more accurately. In UMATO, optimization is divided
-                into two phases so that the resulting embeddings can depict the global structure reliably while
-                preserving the local structure with sufficient accuracy. As the first phase, hub points are identified
-                and projected to construct a skeletal layout for the global structure. In the second phase, the
-                remaining points are added to the embedding preserving the regional characteristics of local areas.
-                Through quantitative experiments, we found that UMATO (1) outperformed widely used DR techniques in
-                preserving the global structure while (2) producing competitive accuracy in representing the local
-                structure. We also verified that UMATO is preferable in terms of robustness over diverse initialization
-                methods, number of epochs, and subsampling techniques.
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/p2dbm.png" alt="p2dbm" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Tractable Joint Prediction and Planning Over Discrete Behavior Modes for Urban Driving
+                </papertitle>
+              <br>
+              Adam Villaflor, <strong>Brian Yang</strong>, Huangyuan Su, Katerina Fragkiadaki, John Dolan, Jeff Schneider
+              <br>
+              <em>ICRA</em> 2024
+              <br>
+              <a href="https://arxiv.org/abs/2403.07232">arXiv</a> / 
+              <a href="https://arxiv.org/pdf/2403.07232.pdf">pdf</a> / 
+              <a href="https://github.com/avillaflor/P2DBM">code</a> 
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/relmm.png" alt="relmm" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Fully Autonomous Real-World Reinforcement Learning with Applications to Mobile Manipulation
+                </papertitle>
+              <br>
+              Charles Sun, Jędrzej Orbik, Coline Devin, <strong>Brian Yang</strong>, Abhishek Gupta, Glen Berseth, Sergey Levine
+              <br>
+              <em>CoRL</em> 2022
+              <br>
+              <a href="https://arxiv.org/abs/2107.13545">arXiv</a> / 
+              <a href="https://arxiv.org/pdf/2107.13545.pdf">pdf</a> / 
+              <a href="https://bair.berkeley.edu/blog/2023/01/20/relmm/">blog</a> /
+              <a href="https://github.com/charlesjsun/ReLMM">code</a> 
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/wrench.png" alt="mavric" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>MAVRIC: Morphology-Agnostic Visual Robotic Control</papertitle>
+              <br>
+              <strong>Brian Yang*</strong>, Dinesh Jayaraman*, Glen Berseth, Alexei Efros, Sergey Levine
+              <br>
+              <em>RA-L + ICRA</em> 2020
+              <br>
+              <a href="https://arxiv.org/abs/1912.13360">arXiv</a> / <a href="https://arxiv.org/pdf/1912.13360.pdf">pdf</a> / <a href="https://sites.google.com/berkeley.edu/mavric">project page</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/teaser.png" alt="mavric" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>DIGIT: A Novel Design for a Low-Cost Compact High-Resolution Tactile Sensor with Application to In-Hand Manipulation</papertitle>
+              <br>
+              Mike Lambeta*, Po-Wei Chou*, Stephen Tian, <strong>Brian Yang</strong>, Benjamin Maloon, Victoria Rose Most, Dave Stroud, Raymond Santos, Ahmad Byagowi, Gregg Kammerer, Dinesh Jayaraman, Roberto Calandra
+              <br>
+              <em>RA-L + ICRA</em> 2020
+              <br>
+              <a href="https://arxiv.org/abs/2005.14679">arXiv</a> / <a href="https://arxiv.org/pdf/2005.14679.pdf">pdf</a> / <a href="https://digit.ml/">project page</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/replab.jpg" alt="replab" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>REPLAB: A Reproducible Low-Cost Arm Benchmark Platform for Robotic Learning</papertitle>
+              <br>
+              <strong>Brian Yang</strong>, Dinesh Jayaraman, Sergey Levine
+              <br>
+              <em>ICRA</em> 2019
+              <br>
+              <a href="https://arxiv.org/abs/1905.07447">arXiv</a> /
+              <a href="https://arxiv.org/pdf/1905.07447.pdf">pdf</a> /
+              <a href="https://sites.google.com/view/replab/">project page</a> /
+              <a href="https://github.com/bhyang/replab">code</a>
+              <!-- <p>We present a reproducible, low-cost, self-contained hardware stack for benchmarking vision-based manipulation tasks.</p> -->
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/microrobot-morphology.png" alt="morphology" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Data-efficient Learning of Morphology and Controller for a Microrobot</papertitle>
+              <br>
+              Thomas Liao, Grant Wang, <strong>Brian Yang</strong>, Rene Lee, Kris Pister, Sergey Levine, Roberto Calandra
+              <br>
+              <em>ICRA</em> 2019
+              <br>
+              <a href="https://arxiv.org/abs/1905.01334">arxiv</a> /
+              <a href="https://arxiv.org/pdf/1905.01334.pdf">pdf</a> /
+              <a href="https://sites.google.com/view/learning-robot-morphology/">project page</a> /
+              <a href="https://github.com/tholiao/learning-morph-and-ctrl">code</a>
+              <!-- <p>Robot design is often a slow and difficult process requiring the iterative construction and testing of prototypes. We propose HPC-BBO, a novel algorithm to efficiently and automatically design hardware configurations and controllers for locomotion.</p> -->
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/prototype.png" alt="prototype" width="240" height="160">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Learning Flexible and Reusable Locomotion Primitives for a Microrobot</papertitle>
+              <br>
+              <strong>Brian Yang*</strong>, Grant Wang*, Roberto Calandra, Daniel Contreras, Sergey Levine, Kris Pister
+              <br>
+              <em>RA-L + ICRA</em> 2018
+              <br>
+              <a href="https://arxiv.org/abs/1803.00196">arXiv</a> /
+              <a href="https://arxiv.org/pdf/1803.00196.pdf">pdf</a> /
+              <a href="https://sites.google.com/view/learning-locomotion-primitives">project page</a> /
+              <a href="https://github.com/bhyang/microrobot-locomotion">code</a>
+              <!-- <p>We validate Bayesian optimization as a
+              data-efficient method to design gaits for legged microrobots. We also propose a novel
+              approach to learning motor primitives by converting a contextual policy
+              search problem into a multi-objective optimization task.</p> -->
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Template taken from <a href="https://jonbarron.info/">here</a>.
               </p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="brush_stop()" onmouseover="brush_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="brush_image" style="opacity: 0;">
-                <img src="./images/brush_after.png" class="img1">
-              </div>
-              <img src="./images/brush_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function brush_start() {
-                document.getElementById('brush_image').style.opacity = "1";
-              }
-
-              function brush_stop() {
-                document.getElementById('brush_image').style.opacity = "0";
-              }
-              brush_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Distortion-Aware Brushing for Interactive Cluster Analysis in Multidimensional Projections</strong>
-            <br>
-            Hyeon Jeon, Michael Aupetit, Soohyun Lee, <u>Kwon Ko</u>, Youngtaek Kim, Jinwook Seo
-            <br>
-            <em>Arxiv 2022 (Under review)</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> / -->
-              <a class="f3" href="https://arxiv.org/abs/2201.06379">paper</a> /
-              <a class="f3" href="https://github.com/hj-n/distortion-aware-brushing">code</a>
-              <p style="font-size:11px; margin:0px; text-align:justify;">Brushing is an everyday interaction in 2D
-                scatterplots, which allows users to select and filter data points within a continuous, enclosed region
-                and conduct further analysis on the points. However, such conventional brushing cannot be directly
-                applied to Multidimensional Projections (MDP), as they hardly escape from False and Missing Neighbors
-                distortions that make the relative positions of the points unreliable. To alleviate this problem, we
-                introduce Distortion-aware brushing, a novel brushing technique for MDP. While users perform brushing,
-                Distortion-aware brushing resolves distortions around currently brushed points by dynamically relocating
-                points in the projection; the points whose data are close to the brushed data in the multidimensional
-                (MD) space go near the corresponding brushed points in the projection, and the opposites move away.
-                Hence, users can overcome distortions and readily extract out clustered data in the MD space using the
-                technique. We demonstrate the effectiveness and applicability of Distortion-aware brushing through usage
-                scenarios with two datasets. Finally, by conducting user studies with 30 participants, we verified that
-                Distortion-aware brushing significantly outperforms previous brushing techniques in precisely separating
-                clusters in the MD space, and works robustly regardless of the types or the amount of distortions in
-                MDP.
-              </p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="snc_stop()" onmouseover="snc_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="snc_image" style="opacity: 0;">
-                <img src="./images/snc_after.png" class="img1">
-              </div>
-              <img src="./images/snc_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function snc_start() {
-                document.getElementById('snc_image').style.opacity = "1";
-              }
-
-              function snc_stop() {
-                document.getElementById('snc_image').style.opacity = "0";
-              }
-              snc_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Measuring and explaining the inter-cluster reliability of multidimensional projections</strong>
-            <br>
-            Hyeon Jeon, <u>Kwon Ko</u>, Jaemin Jo, Youngtaek Kim, Jinwook Seo
-            <br>
-            <em>TVCG 2021 (Proc. VIS 2021)</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> / -->
-              <a class="f3" href="https://arxiv.org/abs/2107.07859">paper</a> /
-              <a class="f3" href="https://github.com/hj-n/steadiness-cohesiveness">code</a> /
-              <a class="f3" href="https://www.youtube.com/watch?v=_UdT0A1ByKE">video</a> /
-              <a class="f3" href="./data/snc.html">bibtex</a> /
-              <a class="f3" href="https://doi.org/10.1109/TVCG.2021.3114833">doi</a> /
-              <a class="f3"
-                href="https://medium.com/snu-aiis-blog/measuring-and-explaining-the-inter-cluster-reliability-of-multidimensional-projections-ec07f4dcb153">post</a>
-              <p style="font-size:11px; margin:0px; text-align:justify;">We propose Steadiness and Cohesiveness, two
-                novel metrics to measure the inter-cluster reliability of multidimensional projection (MDP),
-                specifically how well the inter-cluster structures are preserved between the original high-dimensional
-                space and the low-dimensional projection space. Measuring inter-cluster reliability is crucial as it
-                directly affects how well inter-cluster tasks (e.g., identifying cluster relationships in the original
-                space from a projected view) can be conducted; however, despite the importance of inter-cluster tasks,
-                we found that previous metrics, such as Trustworthiness and Continuity, fail to measure inter-cluster
-                reliability. Our metrics consider two aspects of the inter-cluster reliability: Steadiness measures the
-                extent to which clusters in the projected space form clusters in the original space, and Cohesiveness
-                measures the opposite. They extract random clusters with arbitrary shapes and positions in one space and
-                evaluate how much the clusters are stretched or dispersed in the other space. Furthermore, our metrics
-                can quantify pointwise distortions, allowing for the visualization of inter-cluster reliability in a
-                projection, which we call a reliability map. Through quantitative experiments, we verify that our
-                metrics precisely capture the distortions that harm inter-cluster reliability while previous metrics
-                have difficulty capturing the distortions. A case study also demonstrates that our metrics and the
-                reliability map 1) support users in selecting the proper projection techniques or hyperparameters and 2)
-                prevent misinterpretation while performing inter-cluster tasks, thus allow an adequate identification of
-                inter-cluster structure.</p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="invoice_stop()" onmouseover="invoice_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id='invoice'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/invoice_after.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video></div>
-              <img src='images/invoice_before.png' class="img1">
-            </div>
-            <script type="text/javascript">
-              function invoice_start() {
-                document.getElementById('invoice').style.opacity = "1";
-              }
-
-              function invoice_stop() {
-                document.getElementById('invoice').style.opacity = "0";
-              }
-              invoice_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Mixed-Initiative Approach to Extract Data from Pictures of Medical Invoice</strong>
-            <br>
-            Seokweon Jung, Kiroong Choe, Seokhyeon Park, <u>Kwon Ko</u>, Youngtaek Kim, Jinwook Seo
-            <br>
-            <em>PacificVis 2021 short</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <a class="f3" href="./data/invoice.pdf">paper</a> /
-              <a class="f3" href="https://www.youtube.com/watch?v=W3l94Q4UOPw">video</a> /
-              <a class="f3" href="./data/invoice.html">bibtex</a> /
-              <a class="f3" href="https://doi.org/10.1109/PacificVis52677.2021.00022">doi</a>
-              <p style="font-size:11px; margin:0px; text-align:justify;">Extracting data from pictures of medical
-                records is a common task in the insurance industry as the patients often send their medical invoices
-                taken by smartphone
-                cameras. However, the overall process is still challenging to be fully automated because of low image
-                quality and variation of templates that exist in the status quo. In this paper, we propose a
-                mixed-initiative pipeline for extracting data from pictures of medical invoices, where
-                deep-learning-based automatic prediction models and task-specific heuristics work together under the
-                mediation of a user. In the user study with 12 participants, we confirmed our mixed-initiative approach
-                can supplement the drawbacks of a fully automated approach within an acceptable completion time. We
-                further discuss the findings, limitations, and future works for designing a mixed-initiative system to
-                extract data from pictures of a complicated table.</p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="pumap_stop()" onmouseover="pumap_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id='pumap'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/pumap_after.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video></div>
-              <img src='images/pumap_before.png' class="img1">
-            </div>
-            <script type="text/javascript">
-              function pumap_start() {
-                document.getElementById('pumap').style.opacity = "1";
-              }
-
-              function pumap_stop() {
-                document.getElementById('pumap').style.opacity = "0";
-              }
-              pumap_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Progressive Uniform Manifold Approximation and Projection</strong>
-            <br>
-            <u>Kwon Ko</u>, Jaemin Jo, Jinwook Seo
-            <br>
-            <em>EuroVis 2020 short</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <a class="f3" href="./data/pumap.pdf">paper</a> /
-              <a class="f3" href="https://github.com/hyungkwonko/progressive-umap">code</a> /
-              <a class="f3" href="https://youtu.be/edIPfDIH1p0?t=4669">talk</a> /
-              <a class="f3" href="./data/pumap.html">bibtex</a> /
-              <a class="f3" href="https://doi.org/10.2312/evs.20201061">doi</a>
-              <p style="font-size:11px; margin:0px; text-align:justify;">We present a progressive algorithm for the
-                Uniform Manifold Approximation and Projection (UMAP), called the Progressive UMAP. Based on the theory
-                of Riemannian geometry and algebraic topology, UMAP is an emerging dimensionality reduction technique
-                that offers better versatility and stability than t-SNE. Although UMAP is also more efficient than
-                t-SNE, it still suffers from an initial delay of a few minutes to produce the first projection, which
-                limits its use in interactive data exploration. To tackle this problem, we improve the sequential
-                computations in UMAP by making them progressive, which allows people to incrementally append a batch of
-                data points into the projection at the desired pace. In our experiment with the Fashion MNIST dataset,
-                we found that Progressive UMAP could generate the first approximate projection within a few seconds
-                while also sufficiently capturing the important structures of the high-dimensional dataset.</p>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="container my-2 py-3" style="max-width: 800px;">
-    <h4>PROJECTS</h4>
-    <table>
-      <tbody>
-        <tr onmouseout="sketch_stop()" onmouseover="sketch_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id='sketch'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/sketch_after.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video></div>
-              <img src='images/sketch_before.png' class="img1">
-            </div>
-            <script type="text/javascript">
-              function sketch_start() {
-                document.getElementById('sketch').style.opacity = "1";
-              }
-
-              function sketch_stop() {
-                document.getElementById('sketch').style.opacity = "0";
-              }
-              sketch_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Abstract Sketch to Character</strong>
-            <br>
-            <em>Spring 2022</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <p style="margin:0px; text-align:justify;">Convert human-drawn abstract sketch image to an anime character
-                with varying styles</p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="pong_stop()" onmouseover="pong_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id='pong'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/pong_after.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video></div>
-              <img src='images/pong_before.png' class="img1">
-            </div>
-            <script type="text/javascript">
-              function pong_start() {
-                document.getElementById('pong').style.opacity = "1";
-              }
-
-              function pong_stop() {
-                document.getElementById('pong').style.opacity = "0";
-              }
-              pong_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Playing Atari with DQN</strong>
-            <br>
-            <em>Winter 2019</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <a class="f3" href="https://github.com/hyungkwonko/2019-summer-seminar/tree/master/project">code</a> /
-              <a class="f3" href="https://www.youtube.com/watch?v=0UZ5U5YhGMs">video</a>
-              <p style="margin:0px; text-align:justify;">Implemented DQN algorithm (Mnih et al. 2013)
-                that can play one of the Atari games, 'Pong', and can beat the opponent</p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="music_stop()" onmouseover="music_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id='music'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/music_after.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video></div>
-              <img src='images/music_before.png' class="img1">
-            </div>
-            <script type="text/javascript">
-              function music_start() {
-                document.getElementById('music').style.opacity = "1";
-              }
-
-              function music_stop() {
-                document.getElementById('music').style.opacity = "0";
-              }
-              music_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Musical Structure Visualization with MIDI Data</strong>
-            <br>
-            <em>Fall 2019</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> / -->
-              <a class="f3" href="https://hyungkwonko.github.io/M1522.000500-infovis-demo/">demo</a> /
-              <a class="f3" href="https://github.com/hyungkwonko/M1522.000500-infovis">code</a> /
-              <a class="f3" href="https://www.youtube.com/watch?v=2h5kbOyopqg">video</a>
-              <p style="margin:0px; text-align:justify;">Information Visualization project at SNU</p>
-            </div>
-          </td>
-        </tr>
-
-        <tr onmouseout="novel_stop()" onmouseover="novel_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id='novel'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/novel_after.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video></div>
-              <img src='images/novel_before.png' class="img1">
-            </div>
-            <script type="text/javascript">
-              function novel_start() {
-                document.getElementById('novel').style.opacity = "1";
-              }
-
-              function novel_stop() {
-                document.getElementById('novel').style.opacity = "0";
-              }
-              novel_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <strong>Korean Web Novel Generation</strong>
-            <br>
-            <em>Spring 2018 - Summer 2018</em>
-            <br>
-            <div class="d-none d-sm-block">
-              <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> / -->
-              <a class="f3" href="./novel.pdf">paper</a> /
-              <a class="f3" href="https://github.com/hyungkwonko/novel-generator">code</a> /
-              <a class="f3" href="https://github.com/hyungkwonko/novel-generator/wiki">wiki</a> /
-              <a class="f3" href="https://www.blice.co.kr/mw/detail.kt?novelId=10509">link</a> /
-              <a class="f3" href="https://n.news.naver.com/mnews/article/056/0010611080?sid=001">media</a>
-              <p style="margin:0px; text-align:justify;">Made deep learning-based Korean sentence recommender. Received
-                20,000,000 KRW of prize money.
-              </p>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="container my-2 py-3" style="max-width: 800px;">
-    <h4>MISC</h4>
-    <table>
-      <tbody>
-        <tr onmouseout="me_stop()" onmouseover="me_start()" style="vertical-align:top;">
-          <td class="py-3 px-2 w-25">
-            <div class="one">
-              <div class="two" id="me_image" style="opacity: 0;">
-                <img src="./images/me_after.png" class="img1">
-              </div>
-              <img src="./images/me_before.png" class="img1">
-            </div>
-            <script type="text/javascript">
-              function me_start() {
-                document.getElementById('me_image').style.opacity = "1";
-              }
-
-              function me_stop() {
-                document.getElementById('me_image').style.opacity = "0";
-              }
-              me_stop()
-            </script>
-          </td>
-          <td class="py-3 w-75" style="padding-left:15px;">
-            <p style="margin:0px; text-align:justify;">I love playing piano.
-              Also, I like swimming a lot, so I go swimming almost everyday. I am a big fan of
-              Tottenham Hotspur since 2009. I own more than 400 comic books and like reading Murakami Haruki's short
-              novels. I love this quote the most:
-              <br><br>
-              <i>Dance like nobody's watching; Love like you've never been hurt;
-                Work like you don't need money; Live like it's heaven on earth.</i>
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="container my-2 py-3 text-center" style="max-width: 800px;">
-    <table>
-      <tbody>
-        <!-- <tr>
-          <div class="col">
-            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=n&d=eqMjczA-Mp8mNv870QMMaS8heUJ7Euel6QpGDVX10Rs'></script>
-          </div>
-        </tr> -->
-        <tr>
-          <div class="col">
-            <a href="https://scholar.google.com/citations?user=F4dFwpMAAAAJ"><i
-                class="fa-brands fa-lg fa-google f1"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/hyungkwonko">
-              <i class="fa-brands fa-lg fa-github f1"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/hyungkwonko/"><i class="fa-brands fa-lg fa-linkedin f1"></i></a>
-            <!-- <a href="https://twitter.com/hyungkwonko"><i class="fa fa-lg fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-          </div>
-        </tr>
-        <br>
-        <tr>
-          <p style="font-size:small;">
-            Referred to existing websites such as <a class="f4" href="https://jonbarron.info/">this</a> and
-            <a class="f4" href="http://ranjithakumar.net/">this</a>.
-          </p>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
-  <script>
-    function extend_news() {
-      let newsRows = news.querySelectorAll("tr:nth-child(n+6)");
-      newsRows.forEach(row => row.style.display = window.getComputedStyle(row).display === "none" ? "table-row" : "none");
-    }
-    // function extend_pub() {
-    //   let publRows = publ.querySelectorAll("tr:nth-child(n+8)");
-    //   publRows.forEach(row => row.style.display = window.getComputedStyle(row).display === "none" ? "table-row" : "none");
-    // }
-  </script>
-
-
-  <script>
-    function switchTheme() {
-      document.body.dataset.bsTheme = document.body.dataset.bsTheme == "light" ? "dark" : "light";
-    }
-
-    function toggleIcon() {
-      var themeIcon = document.getElementById('theme-icon');
-      if (document.body.dataset.bsTheme == "dark") {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-      } else {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-      }
-    }
-  </script>
-
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
