@@ -57,8 +57,8 @@
 		  <br>
 		  <u><strong><span style="font-size: 15px">Sooyoung Kim</span></strong></u>, Joonwoo Kwon, Mincheol Park, Jeongwoo Seo, Won Woo Ro, Shinjae Yoo, Suhyun Kim, Yuewei Lin, Jiook Cha
 		  <br><br>
-		  <font size="2">Developing a model that processes ventral and dorsal pathways of brain signals and maps them to ‘what’ and ‘where’ information to generate what humans see using functional MRI. Utilizing Stable Diffusion to reconstruct images using Directed Diffusion for low-level object location and Generative Image2Text (GIT) to generate captions from fMRI embedding by mapping to CLIP domain. Our brain-induced attention guidance directly modifies cross-attention layers of LDM at inference without further fine-tuning.
-		  Propose a unified brain encoding module modeling two visual pathways and directly modulate visual attentions guided by the human brain leading to composable prompt modulation.
+		  <font size="2">
+		  We have developed a new brain-to-image decoding model that allows composable prompt modulation using brain signals for the first time. Previous studies only leveraged the “nsdgeneral” brain region which is a subset of voxels in the posterior cortex most responsive to visual information. However, according to the two-streams hypothesis, the human brain processes visual stimuli across ventral and dorsal pathways. Therefore, we correlate them to ‘what’ and ‘where’ information in images to reconstruct what people see from functional MRI. We propose a unified brain encoding module for two visual pathways and a new framework that guides the model to the location and identity of objects from the brain based on diffusion models. Our brain-induced attention guidance directly modifies cross-attention layers of LDM at inference without further fine-tuning.
 		  </font>
 		  <br>
 		</td>
