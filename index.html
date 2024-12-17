@@ -37,7 +37,7 @@
               <p style="text-align: center">
                 <strong><font size="6"><name>Sooyoung Kim</name></font></strong>
               </p>
-              <p>My research interests lie in <b>Computer Vision</b>, <b>Generative AI</b>, and <b>Human-AI</b>. I am interested in understanding and generating dynamic images including video and 3D scenes, particularly applications to story-based multimodal media like movies. I aim to discover how humans process and interpret visual stimuli and how to make the model depict human intelligence and the real-world. </p>
+              <p>My research interests lie in <b>Computer Vision</b>, <b>Generative AI</b>, and <b>Human-AI</b>. I am interested in understanding and generating <b>images, videos, and 3D/4D</b> content, particularly applications to narrative-driven multimedia like movies. I aim to develop controllable models that interact with humans and perceive the real world. </p>
 	      <p>I received M.S. in <a href="https://bcs.snu.ac.kr/">Brain and Cognitive Sciences</a> at <a href="https://en.snu.ac.kr/index.html">Seoul National University</a>, under the supervision of <a href="https://scholar.google.com/citations?user=fHSAoOoAAAAJ&hl=en&oi=ao">Prof.Jiook Cha</a>. Since my Master's program, I have been fortunate to be advised by <a href="https://iacs.stonybrook.edu/people/_affiliates/shinjae-yoo.php">Prof.Shinjae Yoo</a> and <a href="https://ywlincq.github.io/">Prof.Yuewei Lin</a> at <a href="https://www.bnl.gov/world/">Brookhaven National Laboratory (BNL)</a>. Previously, I received B.S. in <a href="https://cms.ewha.ac.kr/user/indexMain.action?siteId=cseeng">Computer Science and Engineering</a> at <a href="https://www.ewha.ac.kr/ewhaen/index.do">Ewha Womans University</a>. </p>
               <p>I will be applying for a PhD in the 2025 cycle!</p>
 	      <div class="social-icons">
@@ -113,10 +113,10 @@
 		<td style="padding:2%;width:75%;vertical-align:middle">
 		  <span style="font-size: 18px"><strong><papertitle>An Instance-Adaptive Photorealistic Style Optimization for Relightful Image Harmonization​</papertitle></strong></span>
 		  <br>
-		  <a href="https://www.planningo.io/">Planningo</a>: Transform the landscape of advertising photography and commercial videography
+		  <a href="https://www.planningo.io/">Planningo</a>: AI-startup transforming the landscape of advertising photography and commercial videography
 		  <div style="line-height:60%; font size=1"><br></div>
 		  <font size="2">
-		  My goal is to develop image harmonization models for visual coherence in commercial photography service <b><a href="https://www.photio.io/">Photio</a></b>, by resolving the incongruity between AI-generated backgrounds and original advertising photography / commercial videography during synthesis. Specifically, we fine-tuned the synthesis process by matching the lighting conditions of AI-generated backgrounds with those present in original commercial photography. This approach aims to enhance the visual coherence of images, ultimately benefiting the commercial AI photography industry.
+		  My goal is to develop image harmonization models for <b>visual coherence</b> in commercial photography service <b><a href="https://www.photio.io/">Photio</a></b>. As there is an incongruence between AI-generated backgrounds and original advertising photography / commercial videography during synthesis, we fine-tuned the synthesis process by matching the lighting conditions of AI-generated backgrounds with those present in original commercial photography. This approach aims to enhance the visual coherence of images, ultimately benefiting the commercial AI photography industry.
 		  </font>
 		</td>
 	      </tr> 
@@ -133,8 +133,7 @@
 		  <br>
 		  <div style="line-height:60%; font size=1"><br></div>
 		  <font size="2">
-		  We have developed a novel brain-to-text decoding task that allows composable prompt modulation using brain signals for the first time. According to the two-streams hypothesis, we correlate ventral and dorsal pathway in the brain to ‘what’ and ‘where’ information in images which is the first-tried approach in brain decoding to reconstruct what people see from functional MRI. We propose a unified brain encoding module for two visual pathways and a new framework that guides the model to the location and identity of objects from the brain based on diffusion models. Our brain-induced attention guidance directly modifies cross-attention layers of LDM at inference without further fine-tuning.
-		  </font>
+		  We present a novel brain-to-text/image decoding framework that enables composable prompt modulation using brain signals. The two-stream hypothesis is a well-known theory in neuroscience that explains how the brain processes visual information through two pathways: the ventral pathway, which identifies "what" an object is (shape, color, and identity), and the dorsal pathway, which determines "where" the object is (its position and motion in space). Inspired by this, we map these pathways to corresponding image features. Our unified brain encoding module guides object recognition and positioning using diffusion models, with brain-induced attention guidance modifying LDM cross-attention layers during inference, without additional fine-tuning.		  </font>
 		</td>
 	      </tr>
 		
@@ -147,6 +146,38 @@
 	<strong><font size="5"><h5>Publications</h5></font></strong>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+	<!--  Music Style Transfer  -->
+	      <tr>
+		<td style="padding:2%;width:25%;vertical-align:middle">
+		  <img src='images/music.png' width="100%" height="auto">
+		</td>
+		<td style="padding:2%;width:75%;vertical-align:middle">
+		  <span style="font-size: 18px"><strong><papertitle>A Training-Free Approach for Music Style Transfer with Latent Diffusion Models</papertitle></strong></span>
+		  <div style="line-height:20%; font size=1"><br></div>
+		  <u><strong><span style="font-size: 16px">Sooyoung Kim*</span></strong></u>, Joonwoo Kwon*, Heehwan Wang*, <a href="https://iacs.stonybrook.edu/people/_affiliates/shinjae-yoo.php">Shinjae Yoo</a>, <a href="https://ywlincq.github.io/">Yuewei Lin</a>, <a href="https://scholar.google.com/citations?user=fHSAoOoAAAAJ&hl=en&oi=ao">Jiook Cha</a>
+		  <br>
+		  <em> Preprint.</em> <br>
+		  <a href="https://arxiv.org/abs/2411.15913">ArXiv</a>
+		</td>
+	      </tr> 
+		
+	<!--  MRI Synthesis  -->
+	      <tr>
+		<td style="padding:2%;width:25%;vertical-align:middle">
+		  <img src='images/mri_synthesis.jpg' width="100%" height="auto">
+		</td>
+		<td style="padding:2%;width:75%;vertical-align:middle">
+		  <span style="font-size: 18px"><strong><papertitle>Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity</papertitle></strong></span>
+		  <div style="line-height:20%; font size=1"><br></div>
+		  <u><strong><span style="font-size: 16px">Sooyoung Kim*</span></strong></u>, Joonwoo Kwon*, Junbeom Kwon, Sangyoon Bae, <a href="https://ywlincq.github.io/">Yuewei Lin</a>, <a href="https://iacs.stonybrook.edu/people/_affiliates/shinjae-yoo.php">Shinjae Yoo</a>, <a href="https://scholar.google.com/citations?user=fHSAoOoAAAAJ&hl=en&oi=ao">Jiook Cha</a>
+		  <br>
+		  <em> Preprint </em> <br>
+		  <a href="https://arxiv.org/abs/2412.11277">ArXiv</a>
+		  <!--  /
+		  <a href="https://github.com/Sooyyoungg/">Code</a> -->
+		</td>
+	      </tr> 
+		
 	  <!--  Affect  -->
 	      <tr>
 		<td style="padding:2%;width:25%;vertical-align:middle">
@@ -166,38 +197,6 @@
 		  -->
 		</td>
 	      </tr>
-
-	  <!--  Music Style Transfer  -->
-	      <tr>
-		<td style="padding:2%;width:25%;vertical-align:middle">
-		  <img src='images/music.png' width="100%" height="auto">
-		</td>
-		<td style="padding:2%;width:75%;vertical-align:middle">
-		  <span style="font-size: 18px"><strong><papertitle>A Training-Free Approach for Music Style Transfer with Latent Diffusion Models</papertitle></strong></span>
-		  <div style="line-height:20%; font size=1"><br></div>
-		  <u><strong><span style="font-size: 16px">Sooyoung Kim*</span></strong></u>, Joonwoo Kwon*, Heehwan Wang*, <a href="https://iacs.stonybrook.edu/people/_affiliates/shinjae-yoo.php">Shinjae Yoo</a>, <a href="https://ywlincq.github.io/">Yuewei Lin</a>, <a href="https://scholar.google.com/citations?user=fHSAoOoAAAAJ&hl=en&oi=ao">Jiook Cha</a>
-		  <br>
-		  <em> Preprint.</em> <br>
-		  <a href="https://arxiv.org/abs/2411.15913">ArXiv</a>
-		</td>
-	      </tr> 
-		
-	  <!--  MRI Synthesis  -->
-	      <tr>
-		<td style="padding:2%;width:25%;vertical-align:middle">
-		  <img src='images/mri_synthesis.jpg' width="100%" height="auto">
-		</td>
-		<td style="padding:2%;width:75%;vertical-align:middle">
-		  <span style="font-size: 18px"><strong><papertitle>Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity</papertitle></strong></span>
-		  <div style="line-height:20%; font size=1"><br></div>
-		  <u><strong><span style="font-size: 16px">Sooyoung Kim*</span></strong></u>, Joonwoo Kwon*, Junbeom Kwon, Sangyoon Bae, <a href="https://ywlincq.github.io/">Yuewei Lin</a>, <a href="https://iacs.stonybrook.edu/people/_affiliates/shinjae-yoo.php">Shinjae Yoo</a>, <a href="https://scholar.google.com/citations?user=fHSAoOoAAAAJ&hl=en&oi=ao">Jiook Cha</a>
-		  <br>
-		  <em> Preprint </em> <br>
-		  <!--  <a href="">ArXiv</a>
-		  /
-		  <a href="https://github.com/Sooyyoungg/">Code</a> -->
-		</td>
-	      </tr> 
 		
 	  <!--  AesFA  -->
 	      <tr>
@@ -258,7 +257,7 @@
 		  <br>
 		  <div style="line-height:60%; font size=1"><br></div>
 		  <font size="2">
-		  We proposed a multimodal AI framework for synthesizing personalized videography (video + music) utilizing generative AI and neural signals (EEG). Our work will be presented at the Tech to Art Platform (TAP) International Conference Prequel.
+		  We proposed a multimodal AI framework for synthesizing personalized videography (video + music) utilizing generative AI and neural signals (EEG). In this project, we sought to help people recollect, and reexperience their most cherished memories. To accomplish this, we collected a dataset, which integrates multimodal data such as images, text, and corresponding brain signals (EEG) to decode dynamic affect. Our work will be presented at the Tech to Art Platform (TAP) International Conference Prequel.
 		  </font>
 		  <br>
 		</td>
@@ -278,7 +277,7 @@
 		  <br>
 		  <div style="line-height:60%; font size=1"><br></div>
 		  <font size="2">
-		  We developed an Image-to-Image Translation model that synthesizes 3D depth maps from 2D Scanning Electron Microscope (SEM) images to ensure that semiconductors are produced as intended.
+		  Semiconductor quality assurance is highly inefficient and costly because its components are too extremely small to inspect. Therefore, we developed an Image-to-Image Translation model that synthesizes 3D depth maps from 2D Scanning Electron Microscope (SEM) images to ensure that semiconductors are produced as intended.
 		  </font>
 		  <br>
 		</td>
@@ -318,7 +317,7 @@
 		  <br>
 		  <div style="line-height:60%; font size=1"><br></div>
 		  <font size="2">
-		  We developed a smartphone application that identifies the faces of individuals in front of a household and notifies users of the presence of unknown persons in real-time via a camera affixed to the door.
+		  We developed a smartphone application that identifies the faces of individuals in front of a household and notifies users of the presence of unknown persons in real-time via a security camera affixed to the door.
 		  </font>
 		</td>
 	      </tr> 
@@ -368,9 +367,9 @@
 
 	      
 
-	<!-- ========== About Myself ========== -->
-	<div class="docs-section" id="about myself">
-	<strong><font size="5"><h5>About Myself 🎨</h5></font></strong>
+	<!-- ========== About Me ========== -->
+	<div class="docs-section" id="about me">
+	<strong><font size="5"><h5>About Me 🎨</h5></font></strong>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	      <tr>
 		<td style="padding:2%;width:25%;vertical-align:middle">
@@ -378,7 +377,7 @@
 		</td>
 		<td style="padding:2%;width:75%;vertical-align:middle">
 		  I like swimming a lot, as my first name "수영; Sooyoung" sounds the same as "swimming" in Korean.<br><br>
-	      	  I also love movies and dramas with dynamic stories, especially I am a big fan of "The Good Place" and "Brooklyn Nine-Nine", an American comedy series about detectives who police the NYPD's 99th Precinct. The most intriguing thing is to hear how people perceive stories that are open to various interpretations.
+	      	  I also love movies and dramas with dynamic stories, I am especially a big fan of "The Good Place" and "Brooklyn Nine-Nine", an American comedy series about detectives who police the NYPD's 99th Precinct. I really love both discussing movie interpretations and imagining alternative movie endings with other people.
 		</td>
 	      </tr> 
 
